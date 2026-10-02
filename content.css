@@ -1,0 +1,52 @@
+#ss-pill {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483000;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font: 500 13px/1 Roboto, system-ui, sans-serif;
+  opacity: 0;
+  transition: opacity 0.2s;
+  user-select: none;
+}
+#ss-pill[hidden] { display: none; }
+/* Off-speed stays faintly visible so you know it's on; otherwise mirror YouTube's auto-hide. */
+#ss-pill.ss-changed { opacity: 0.6; }
+#ss-pill.ss-hover,
+#ss-pill.ss-flash,
+#ss-pill:focus-within { opacity: 1; }
+#ss-pill.ss-changed .ss-label { color: #3ea6ff; }
+
+#ss-pill button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 999px;
+  text-align: center;
+}
+#ss-pill button:hover { background: rgba(255, 255, 255, 0.18); }
+#ss-pill button:focus-visible { outline: 2px solid #3ea6ff; }
+#ss-pill .ss-btn { width: 26px; height: 26px; font-size: 17px; line-height: 26px; }
+#ss-pill .ss-label { min-width: 48px; height: 26px; padding: 0 6px; line-height: 26px; font-variant-numeric: tabular-nums; }
+
+#ss-pill .ss-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 4px;
+  border-radius: 12px;
+  background: rgba(15, 15, 15, 0.92);
+}
+#ss-pill .ss-menu[hidden] { display: none; }
+#ss-pill .ss-menu button { padding: 7px 8px; font-variant-numeric: tabular-nums; }
+#ss-pill .ss-menu button.ss-on { background: #3ea6ff; color: #000; }
