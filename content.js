@@ -147,7 +147,7 @@
       pill.hidden = false;
       const hover = mouseX >= r.left && mouseX <= r.right && mouseY >= r.top && mouseY <= r.bottom;
       pill.classList.toggle('ss-hover', hover);
-      pill.style.transform = `translate(${Math.round(r.left + 128)}px, ${Math.round(r.top + 24)}px)`;
+      pill.style.transform = `translate(${Math.round(r.left + 128)}px, ${Math.round(r.top + 20)}px)`;
     }
     if (isShorts()) rafId = requestAnimationFrame(position);
   }

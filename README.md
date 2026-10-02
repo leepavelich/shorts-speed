@@ -9,7 +9,7 @@ A tiny Chrome extension that adds playback speed controls to YouTube Shorts on t
 - Keyboard: **Shift + >** faster, **Shift + <** slower, **Shift + ?** back to 1×
 - Range 0.25× – 4× in 0.25× steps
 - Your speed carries over as you swipe from short to short, and is remembered (synced via your Chrome profile)
-- Shows when you hover the short, like YouTube's own controls. When the speed isn't 1×, it stays faintly visible so you can see it's on
+- Fades in and out with YouTube's own controls when you hover the short
 - YouTube's own press-and-hold 2× is left alone
 
 ## Install (unpacked)
