@@ -2,6 +2,8 @@
 
 A tiny Chrome extension that adds playback speed controls to YouTube Shorts on the web (`youtube.com/shorts/...`), which YouTube doesn't offer.
 
+<img width="562" height="176" alt="image" src="https://github.com/user-attachments/assets/2279d3ae-781b-43ad-a38f-1cad93775c4b" />
+
 ## Features
 
 - A small `− 1× +` pill next to YouTube's own pause/mute buttons on each short
